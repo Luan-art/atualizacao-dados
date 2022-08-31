@@ -1,21 +1,13 @@
+package edu.ifsp.dsi;
 
 
 import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.ResultSet;
 import java.sql.SQLException;
-import java.sql.Statement;
 
 public class Main {
-	private static final String URL_TEMPLATE = "jdbc:mysql://localhost/%s?user=%s&password=%s";
 	
-	private Connection getConnection(String dbName, String username, String password) throws SQLException {
-		String url = String.format(URL_TEMPLATE, dbName, username, password);
-		return DriverManager.getConnection(url);
-	}
-		
 	public void executar() {		
-		try (Connection conn = getConnection("financas", "dsi", "6ehdez")) {
+		try (Connection conn = ConnectionProvider.getConnection()) {
 
 			/*
 			 * Tarefa 1

@@ -13,7 +13,7 @@ public class Main {
 			 * Tarefa 1
 			 * Implemente a inserção de duas novas contas, usando `Statement`s simples.
 			 * 
-			 * Você vai precisar cadastrar pessoas, caso sua tabela `pessoa` esteja
+			 * Antes, você vai precisar cadastrar pessoas, caso sua tabela `pessoa` esteja
 			 * vazia. Use o seu cliente MySQL para fazer isso.
 			 */
 						
@@ -22,8 +22,10 @@ public class Main {
 			
 			/* 
 			 * Tarefa 2
-			 * Usando `PreparedStatement`, registre uma sequência de movimentações 
-			 * da primeira para a segunda conta. Use os valores contidos no vetor a seguir.
+			 * Usando `PreparedStatement`, registre uma sequência de movimentações, da 
+			 * primeira para a segunda conta. 
+			 * 
+			 * Use os valores contidos no vetor a seguir.
 			 * Não é necessário atualizar o saldo. Apenas registre as movimentações.  
 			 */
 			double[] valores = {50, 1200, -300, 100, -73, -41, 80, 15, -20};
